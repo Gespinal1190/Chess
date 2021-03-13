@@ -5,8 +5,11 @@ body {
   padding-bottom: 75px; }
   @media (max-width: 767px) {
     body {
-      padding-bottom: 30px; } }
-
+      padding-bottom: 10px; } }
+      .bandera  {
+        height: 250px;
+        width: 250px;
+      }
 @media (max-width: 991px) {
   .section-left {
     padding: 24px 40px; } }
