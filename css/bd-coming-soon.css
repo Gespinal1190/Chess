@@ -117,4 +117,18 @@ body {
         font-size: 14px; } }
 
 /*# sourceMappingURL=bd-coming-soon.css.map */
- 
+
+.spacing {
+  margin-bottom: 60px;}
+   a:hover {
+    color: #210127;}
+  .buttonpreview {
+    padding: 16px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #ff5d29;
+    border: 0;
+    height: 48px;
+    white-space: nowrap;}
