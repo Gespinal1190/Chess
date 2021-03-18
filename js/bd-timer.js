@@ -5,7 +5,7 @@ firebase.initializeApp({
     apiKey: '### FIREBASE API KEY ###',
     authDomain: '### FIREBASE AUTH DOMAIN ###',
     projectId: '### CLOUD FIRESTORE PROJECT ID ###'
-  });
+  });-v
   
   var db = firebase.firestore();
 var endDate = new Date().getTime() + 1000800000;
