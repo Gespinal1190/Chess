@@ -1,5 +1,4 @@
-var db = firebase.firestore();
-var endDate = new Date().getTime() + 1000800000;
+var endDate = newFunction();
 
 var x = setInterval(function() {
 
@@ -27,3 +26,7 @@ var x = setInterval(function() {
     }
 
 },1000);
+
+function newFunction() {
+    return new Date().getTime() + 1000800000;
+}
