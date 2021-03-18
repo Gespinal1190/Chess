@@ -163,3 +163,15 @@ You're about to initialize a Firebase project in this directory:
 [debug] [2021-03-18T07:13:05.312Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
 [debug] [2021-03-18T07:13:05.536Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
 [debug] [2021-03-18T07:13:05.536Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-18T07:14:00.190Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-03-18T07:14:00.401Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-03-18T07:14:00.401Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-18T07:14:05.427Z] >>> [apiv2][query] GET https://api.github.com/repos/firebase deploy/actions/secrets/public-key type=owner
+[debug] [2021-03-18T07:14:05.808Z] <<< [apiv2][status] GET https://api.github.com/repos/firebase deploy/actions/secrets/public-key 404
+[debug] [2021-03-18T07:14:05.808Z] <<< [apiv2][body] GET https://api.github.com/repos/firebase deploy/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-18T07:14:11.996Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-03-18T07:14:12.261Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-03-18T07:14:12.262Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-18T07:14:28.897Z] >>> [apiv2][query] GET https://api.github.com/repos/chess/actions/secrets/public-key type=owner
+[debug] [2021-03-18T07:14:29.122Z] <<< [apiv2][status] GET https://api.github.com/repos/chess/actions/secrets/public-key 404
+[debug] [2021-03-18T07:14:29.122Z] <<< [apiv2][body] GET https://api.github.com/repos/chess/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
