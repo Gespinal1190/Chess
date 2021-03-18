@@ -120,8 +120,7 @@ body {
 
 .spacing {
   margin-bottom: 60px;}
-   a:hover {
-    color: #210127;}
+   
   .buttonpreview {
     padding: 16px 20px;
     font-size: 13px;
@@ -132,3 +131,5 @@ body {
     border: 0;
     height: 48px;
     white-space: nowrap;}
+    a:hover {
+      color: #210127;} 
