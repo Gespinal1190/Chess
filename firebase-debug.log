@@ -1,1 +1,41 @@
 [debug] [2021-03-19T09:07:22.396Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T05:06:43.505Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T05:06:43.507Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\German Espinal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2021-03-24T05:06:43.507Z] CLI Version:   9.6.1
+[debug] [2021-03-24T05:06:43.507Z] Platform:      win32
+[debug] [2021-03-24T05:06:43.507Z] Node Version:  v14.16.0
+[debug] [2021-03-24T05:06:43.508Z] Time:          Wed Mar 24 2021 01:06:43 GMT-0400 (hora de Venezuela)
+[debug] [2021-03-24T05:06:43.508Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T05:06:43.508Z] 
+[debug] [2021-03-24T05:06:43.510Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-03-24T05:06:43.527Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-24T05:06:43.528Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-03-24T05:06:43.545Z] [hub] writing locator at C:\Users\GERMAN~1\AppData\Local\Temp\hub-fdajedez.json
+[debug] [2021-03-24T05:06:43.570Z] > refreshing access token with scopes: []
+[debug] [2021-03-24T05:06:43.570Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-24T05:06:43.782Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 24 Mar 2021 05:06:42 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-24T05:06:43.786Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fdajedez/webApps/-/config [none]
+[debug] [2021-03-24T05:06:43.904Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-03-24T05:06:43.904Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-03-24T05:06:44.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fdajedez/webApps/-/config 200
+[debug] [2021-03-24T05:06:44.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fdajedez/webApps/-/config {"projectId":"fdajedez","databaseURL":"https://fdajedez-default-rtdb.firebaseio.com","storageBucket":"fdajedez.appspot.com","locationId":"us-central","apiKey":"AIzaSyCWYUw3vlPc3bCgRAjFsn3OjCpAUEjZoDc","authDomain":"fdajedez.firebaseapp.com","messagingSenderId":"896697227879"}
+[info] i  hosting: Serving hosting files from: / {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m/\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
