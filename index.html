@@ -16,35 +16,6 @@
 </head>
 
 <body class="min-vh-100 d-flex flex-column">
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCWYUw3vlPc3bCgRAjFsn3OjCpAUEjZoDc",
-    authDomain: "fdajedez.firebaseapp.com",
-    databaseURL: "https://fdajedez-default-rtdb.firebaseio.com",
-    projectId: "fdajedez",
-    storageBucket: "fdajedez.appspot.com",
-    messagingSenderId: "896697227879",
-    appId: "1:896697227879:web:5d0a45839200d1fcc292c2",
-    measurementId: "G-98F156ZG6K"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js">
-</script>
     <main class="my-auto">
         <div class="container">
             <div class="row">
@@ -100,11 +71,47 @@
             <!--a href="#!" class="social-link"><i class="mdi mdi-google"></i></a-->
         </nav>
         <p class="footer-text mb-0">
-            Copyright 2021  German Espinal UX/UI Dedign
+            
         </p>
     </footer>
 
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>    
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCWYUw3vlPc3bCgRAjFsn3OjCpAUEjZoDc",
+            authDomain: "fdajedez.firebaseapp.com",
+            databaseURL: "https://fdajedez-default-rtdb.firebaseio.com",
+            projectId: "fdajedez",
+            storageBucket: "fdajedez.appspot.com",
+            messagingSenderId: "896697227879",
+            appId: "1:896697227879:web:5d0a45839200d1fcc292c2",
+            measurementId: "G-98F156ZG6K"
+        };
+
+        // Initialize Firebase
+
+        console.log({ firebase });
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <!-- Initialize Firebase -->
+    
+    <script src="//unpkg.com/navigo@6"></script>
     <script src=".\js\bd-timer.js"></script>
+    <script src=".\js\Chess.js"></script>
 </body>
 
 </html>
