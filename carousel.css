@@ -93,12 +93,11 @@ body {
 }
 .button {
   border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #646464;
+	background-color: #646464;
 	color: #FFFFFF;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: bold;
-	padding: 5px 40px;
+	padding: 5px 20px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
