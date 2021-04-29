@@ -14,7 +14,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href=".\assets\dist\css\bootstrap.min.css" rel="stylesheet">
+  <link href=".\assets\dist\css\bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -40,36 +40,38 @@
     
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <div class="col-xl-1 col-lg-3 col-md-4 col-1">
-        <a href="" class="logo">
-          <img src=".\Home\LOGOFDA100.png" alt="#">
-        </a>
-      </div>
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container-fluid" class="col-xl-1 col-lg-3 col-md-4 col-1">
+     <!--button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button1-->
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"></li> 
+           <a href="" class="logo"> <img src=".\Home\LOGOFDA100.png" alt="#"> </a>
+          </li> 
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Tournaments</a>
+           <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">news</a>
+           <a class="nav-link" aria-current="page" href="#">Tournaments</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+           <a class="nav-link" href="#">news</a>
           </li>
           <li class="nav-item">
-          <a href=".\signup\signin.html"><button class="button">Sign In</button></a>
+           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <!--form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"->
+          <button class="btn btn-outline-success" type="submit">Search</button->
+        </form-->
+        <div class="nav-item" class="col-xl-1 col-lg-3 col-md-4 col-1" >
+         <a href=".\signup\signin.html"> <button class="btn btn-outline-success" type="submit">Sign in</button> </a> 
+         <a href=".\signup\signin.html"> <button class="btn btn-outline-success" type="submit">Sign up</button> </a> 
+          <!--a href=".\signup\signin.html"><button class="button">Sign In</button></a-->
+        </div>
+
       </div>
+         
     </div>
   </nav>
 </header>
