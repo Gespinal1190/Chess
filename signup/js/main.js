@@ -1,20 +1,45 @@
-const signupForm = document.querySelector('#signup-form')
+const signupForm = document.querySelector('#register-form')
+const signinForm = document.querySelector('#login-form')
 
-signupForm.addEventListener('submit', (e) =>{
+if(signupForm){
+
+  signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
+  
+    const email = document.getElementById("email");
+    const password = document.getElementById("pass");
+  
+    firebaseProvide.signUp(email.value, password.value, (err, response) => {
+      if (err) {
+        return console.log("Error register")
+      }
+  
+      localStorage.token = response.user.refreshToken;
+    })
+  })
 
-    const signupEmail = Document.querySelector('signup-email').value;
-    const signupEmail = Document.querySelector('signup-Password').value;
+}
 
-    console.log(signupEmail, signupEmail)
 
-    auth
-     .createuserWhtethEmailAndpassword(email, password)
+if(signinForm){
 
-     
-    firebase.auth().signOut().then(() => {
-        // Sign-out successful.
-      }).catch((error) => {
-        // An error happened.
-      });
-})
+  signinForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const email = document.getElementById("your_name");
+    const password = document.getElementById("your_pass");
+  
+    firebaseProvide.singIn(email.value, password.value, (err, response) => {
+      if (err) {
+        return console.log("Error register")
+      }
+
+      localStorage.token = response.user.refreshToken;
+
+      setTimeout(() => {
+        location.href = "/profile"
+      }, 1000)
+    })
+  })
+  
+}
