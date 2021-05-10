@@ -15,6 +15,9 @@ if(signupForm){
       }
   
       localStorage.token = response.user.refreshToken;
+      setTimeout(() => {
+      location.href = "/profile"
+      }, 1000)
     })
   })
 
