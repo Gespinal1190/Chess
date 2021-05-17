@@ -39,7 +39,8 @@
               <div class="row">
                 <div class="col-12 col-sm-auto mb-3">
                   <div class="mx-auto" style="width: 140px;">
-                    <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
+                    <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);position: relative;overflow: hidden;">
+                      <img src="" id="imgFoto" style="position: absolute;left: 0;top: 0;height: 100%;width: 100%;object-fit: cover;">
                       <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
                     </div>
                   </div>
@@ -50,7 +51,8 @@
                     <p class="mb-0">@johnny.s</p>
                     <div class="text-muted"><small>Last seen 2 hours ago</small></div>
                     <div class="mt-2">
-                      <button class="btn btn-primary" type="button">
+                      <input type="file" name="profile" id="fileFoto" style="display: none;">
+                      <button class="btn btn-primary" type="button" id="uploadFoto">
                         <i class="fa fa-fw fa-camera"></i>
                         <span>Change Photo</span>
                       </button>
@@ -195,7 +197,23 @@
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	
+  document.getElementById("uploadFoto").onclick = () => {
+    let inputFile = document.getElementById("fileFoto");
+
+    inputFile.click();
+
+    inputFile.addEventListener("change", () => {
+      let render = new FileReader();
+
+      render.onloadend = () => {
+        imgFoto.src = render.result;
+      }
+
+      if(inputFile.files[0]){
+        render.readAsDataURL(inputFile.files[0])
+      }
+    })
+  }
 </script>
 </body>
 </html>
