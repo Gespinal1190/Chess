@@ -16,7 +16,7 @@ if(signupForm){
   
       localStorage.token = response.user.refreshToken;
       setTimeout(() => {
-      location.href = "/profile"
+      location.href = "/profile2"
       }, 1000)
     })
   })
@@ -40,7 +40,7 @@ if(signinForm){
       localStorage.token = response.user.refreshToken;
 
       setTimeout(() => {
-        location.href = "/profile"
+        location.href = "/profile2"
       }, 1000)
     })
   })
